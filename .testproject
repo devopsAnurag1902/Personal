@@ -29,6 +29,16 @@
         </connection>
       </connections>
     </connectionClass>
+    <connectionClass name="ui">
+      <connections>
+        <connection id="99bbe586-7ec4-44b2-953e-d6cd1ce6e2ee" name="UITESTING">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="se:baseUrl=http://google.com"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
   </connectionClasses>
   <browserConfigurations>
     <browserConfiguration adjustBrowserWidthForChromeIde="true" browserHeight="0" browserWidth="0" name="Full Screen">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase guid="43763637-f840-48bf-b954-2bff7cf2254b">
+<testCase guid="43763637-f840-48bf-b954-2bff7cf2254b" id="0" registryId="43763637-f840-48bf-b954-2bff7cf2254b">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="89e8a2f6-ca11-45dc-92fe-9a16f3bf5e16" name="SetValues" testItemId="1" title="Set Values: Test_Value">
@@ -24,8 +24,102 @@
         </argument>
       </arguments>
     </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiConnect" guid="10db8730-2e0a-4974-8627-328976c187d7" name="UiConnect" testItemId="2" title="UI Connect: UITESTING">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">UITESTING</value>
+        </argument>
+        <argument id="connectionId">
+          <value class="value" valueClass="id">99bbe586-7ec4-44b2-953e-d6cd1ce6e2ee</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">UITESTING</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="privateBrowsingMode"/>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="57a13f1c-b3f7-4225-8667-a338e2c5c5c9" name="UiWithScreen" testItemId="3" title="On MyPageObject page">
+      <arguments>
+        <argument id="uiConnectionName">
+          <value class="value" valueClass="string">UITESTING</value>
+        </argument>
+        <argument id="target">
+          <value class="uiTarget" uri="ui:pageobject:target?pageId=pageobjects.MyPageObject"/>
+        </argument>
+        <argument id="navigate">
+          <value class="value" valueClass="string">Always</value>
+        </argument>
+        <argument id="targetDescription">
+          <value class="value" valueClass="string">On MyPageObject page</value>
+        </argument>
+        <argument id="windowSelection">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="windowSize">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="closeWindow"/>
+        <argument id="captureBefore">
+          <value class="value" valueClass="string">false</value>
+        </argument>
+        <argument id="captureAfter">
+          <value class="value" valueClass="string">false</value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="4">
+          <steps>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="0542b2e9-9294-4642-a4b3-6cda50469956" name="UiDoAction" testItemId="5" title="Click the Gmail">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?pageId=pageobjects.MyPageObject&amp;field=gmail"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="hover">
+                  <value class="value" valueClass="boolean">false</value>
+                </argument>
+                <argument id="captureBefore">
+                  <value class="value" valueClass="string">false</value>
+                </argument>
+                <argument id="captureAfter">
+                  <value class="value" valueClass="string">false</value>
+                </argument>
+                <argument id="beforeWait">
+                  <value class="uiWait" uri="default"/>
+                </argument>
+                <argument id="afterWait">
+                  <value class="uiWait" uri="default"/>
+                </argument>
+                <argument id="autoRetry">
+                  <value class="uiWait" uri="ui:wait:autoRetry:timeout=10"/>
+                </argument>
+                <argument id="locatorParams"/>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Gmail</value>
+                </argument>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="hover" title="Hover before Clicking">
+                  <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+    </apiCall>
   </steps>
   <associations>
-    <association assocationType="TM.TEST_CASE" connectionId="311b57c2-56c2-4e35-a746-36500fa2e882" entityKey="a0cGC00000i4igeYAA" lastUploadedDateTime="2024-06-06T08:46:36Z"/>
+    <association assocationType="TM.TEST_CASE" connectionId="311b57c2-56c2-4e35-a746-36500fa2e882" entityKey="a0cGC00000i4igeYAA" lastModifiedDateTime="2024-06-25T14:35:03Z" lastUploadedDateTime="2024-06-06T08:46:36Z"/>
   </associations>
 </testCase>
