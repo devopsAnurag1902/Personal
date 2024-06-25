@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase guid="43763637-f840-48bf-b954-2bff7cf2254b">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="89e8a2f6-ca11-45dc-92fe-9a16f3bf5e16" name="SetValues" testItemId="1" title="Set Values: Test_Value">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="311b57c2-56c2-4e35-a746-36500fa2e882" entityKey="a0tGC00001C9YtAYAV"/>
+      </associations>
+      <arguments>
+        <argument id="values">
+          <value class="valueList" mutable="Mutable">
+            <namedValues mutable="Mutable">
+              <namedValue name="valuePath">
+                <value class="value" valueClass="string">Test_Value</value>
+              </namedValue>
+              <namedValue name="value">
+                <value class="value" valueClass="string">Abc</value>
+              </namedValue>
+              <namedValue name="valueScope">
+                <value class="value" valueClass="string">Test</value>
+              </namedValue>
+            </namedValues>
+          </value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+  <associations>
+    <association assocationType="TM.TEST_CASE" connectionId="311b57c2-56c2-4e35-a746-36500fa2e882" entityKey="a0cGC00000i4igeYAA" lastUploadedDateTime="2024-06-06T08:46:36Z"/>
+  </associations>
+</testCase>

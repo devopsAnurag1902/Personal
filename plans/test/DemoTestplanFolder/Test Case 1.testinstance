@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testPlanInstance guid="18df9330-d0c7-4698-894b-22b66dc83897" testCaseId="43763637-f840-48bf-b954-2bff7cf2254b" testCasePath="tests/Test Case 1.testcase">
+  <planSettings/>
+  <planFeatures/>
+  <associations>
+    <association assocationType="TM.TEST_SUITE_CASE" connectionId="311b57c2-56c2-4e35-a746-36500fa2e882" entityKey="a0uGC00000u5ABGYA2"/>
+  </associations>
+</testPlanInstance>
