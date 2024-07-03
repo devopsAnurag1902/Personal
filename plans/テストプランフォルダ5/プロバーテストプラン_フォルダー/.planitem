@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<planFolder guid="2ad0f9eb-835f-4884-82e7-e931108c6f38">
+  <planSettings/>
+  <planFeatures>
+    <planFeature connectionId="311b57c2-56c2-4e35-a746-36500fa2e882" enabled="true" name="TEST_MANAGER" type="REPORTING">
+      <settings mutable="Mutable"/>
+    </planFeature>
+  </planFeatures>
+</planFolder>
